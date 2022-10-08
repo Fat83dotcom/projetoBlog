@@ -133,3 +133,4 @@ dmypy.json
 Blog/settings.py
 projeto-blog/
 confidentials.py
+.vscode/
