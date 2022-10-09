@@ -4,7 +4,7 @@ from .models import Comentario
 class ComentarioAdmin(admin.ModelAdmin):
     list_display = (
         'id_comentario',
-        'nome_comentario',
+        'titulo_comentario',
         'email_comentario',
         'comentario_comentario',
         'usuario_comentario',
@@ -12,7 +12,7 @@ class ComentarioAdmin(admin.ModelAdmin):
         'publicado_comentario',
     )
     list_editable = ('publicado_comentario', )
-    list_display_links = ('id_comentario', 'nome_comentario', )
+    list_display_links = ('id_comentario', 'titulo_comentario', )
 
 
 admin.site.register(Comentario, ComentarioAdmin)
